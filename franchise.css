@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.112);
+    padding: 0 40px;/*topbottom leftright*/
+    height: 5rem;
+}
+nav .logo{
+    width: 20%;
+}
+nav img{
+    width: 60%;
+    height: 50%;
+}
+.nav-links{
+    display: flex;
+    list-style: none;/*property to change bullets*/
+    gap: 2rem;
+}
+.nav-links a{
+    color: white;
+}
+a{
+    text-decoration: none;/*to remove underline for all links*/
+}
+.video {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height */
+    overflow: hidden;
+}
+
+.video video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Fills area without distortion */
+}
+
+.text-above-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Match video width */
+    height: 112vh; /* Match video height */
+    background: url(./images/video-bg.png) no-repeat center/cover;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px; /* Prevent text touching edges on mobile */
+}
+
+.text-above-video h2 {
+    margin-bottom: 5px;
+}
+
+.text-above-video p {
+    font-size: 25px;
+    margin-top: 12px;
+    margin-bottom: 3em;
+    color: white;
+}
+
+.text-above-video a {
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: hotpink;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 1.5rem;
+    text-decoration: none;
+}
+/*.video video{
+    min-height: 100vh;
+    position: relative;
+
+}
+.text-above-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin-left: 0;
+    margin-right: 0;
+    background: url(./images/video-bg.png) no-repeat center/cover;
+    min-height: 100vh;
+    min-width: 100vh;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-above-video h2{
+    margin-bottom: 5px;
+}
+.text-above-video p{
+    font-size: 25px;
+    margin-top: 12px;
+    margin-bottom: 3em;
+    text-align: center;
+    color: white;
+}
+.text-above-video a{
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: hotpink;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 1.5rem;
+}*/
+.box1 h1{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;   
+}
+.container h3{
+    font-size: 1.2rem;
+}
+.container img{
+    height: 100px;
+    width: 100px;
+}
+.container p{
+    font-size: 1rem;
+}
+.box1{
+    /*.text-align: center;
+    height: 100vh;*/
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+.container {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 2.5rem;
+    padding: 0px 50px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* align from top */
+    gap: 1.5rem;
+    flex: 1; /* make all boxes same width */
+}
+.container1{
+    text-align: center;
+    margin: 3rem;
+}
+.container1 h2{
+    margin: 2rem;
+}
+.abc{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 10px;
+}
+.inner_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.abc img{
+    width: 3rem;
+    height: 3rem;
+}
+.mission{
+    margin:5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+.mission h3{
+    font-size: 2rem;
+}
+.mission p{
+    font-size: 1.5rem;
+    margin-left: 18rem;
+    margin-right: 18rem;
+}
+
+footer{
+    background: linear-gradient(to right,pink,hotpink);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+.divide{
+    width: 85vw;
+    height: 3px;
+    background-color:rgb(237, 55, 237);
+    margin: 0 auto 5vh auto;
+}
+.meeting h1{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+.meeting h4{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.meeting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./Images/apply-grid.png) no-repeat center/cover;
+    min-height: 100vh;
+    background-size: contain;
+    margin-bottom: 2rem;
+}
+.meeting a{
+    background: hotpink;
+    text-decoration: none;
+    color: white;
+    margin: 1.5rem;
+    padding: 15px 45px;
+    border-radius: 50px;
+}
+@media (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        gap: 10px;
+    }
+    nav .logo {
+        width: 50%;
+        text-align: center;
+    }
+    nav img {
+        width: 80%;
+        height: auto;
+    }
+    .nav-links {
+        gap: 10px;
+        align-items: center;
+    }
+    .mission {
+        margin:2rem;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        gap: 2rem;
+    }
+    .mission p{
+    font-size: 1rem;
+    margin-left: 8px;
+    margin-right: 8px;
+    }
+    .inner_container{
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+        margin-left: 30px;
+    }
+    .abc img{
+    width: 2rem;
+    height: 2rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* equal-width columns */
+        gap: 10px; /* small gap between boxes */
+        margin: 0; /* remove outer margin */
+        padding: 0 10px; /* minimal padding */
+    }
+    .box {
+        background: white; /* optional: add background for visibility */
+        padding: 10px;
+        height: 100%; /* ensure equal height in grid */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+
+    .container h3 {
+        font-size: 1rem;
+    }
+
+    .container img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .container p {
+        font-size: 0.9rem; /* smaller text for mobile */
+    }
+    /*.container{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        column-gap: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .container h3{
+    font-size: 1rem;
+    }
+    .container img{
+        height: 60px;
+        width: 60px;
+        font-weight: normal;
+    }
+    .container p{
+        font-size: 20px
+    }*/
+    .meeting{
+        margin: 10px;
+        padding: 10px;
+        background: url(./Images/apply-grid.png) no-repeat center/cover;
+        min-height: 80vh;
+        min-width: 30vh;
+    }
+    
+}

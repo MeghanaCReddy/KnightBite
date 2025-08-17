@@ -1,0 +1,122 @@
+* {
+    font-family: "Nunito";
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.app-link {
+    width: 100%;
+    height: 100vh;
+    background: url(https://knight-bite.com/res/index/app-link-background.svg);
+    background-size: cover;
+    text-align: center;
+}
+.buttons-container {
+    margin: 60px 0;
+    background: transparent;
+    justify-content: center;
+}
+.stores-container {
+    margin: 10px auto;
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    justify-content: center;
+}
+.ios-store, .android-store {
+        margin: 0 10px;
+        transition: all 0.5s;
+        animation-fill-mode: forwards;
+    }
+.ios-store {
+    width: 203px;
+    height: 68px;
+    background: url(https://knight-bite.com/res/index/ios-store.svg);
+    background-repeat: no-repeat;
+    transform: scale(1);
+}
+    .banner-1 {
+        background: url(https://knight-bite.com/res/index/media-banner-1.webp);
+        width: 100%;
+        height: 100vh;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.banner-1 {
+    text-align: center;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.banner-1 {
+    background: url(./images/banner-1.webp);
+    background-size: cover;
+    height: 1050px;
+}
+.banner-2 {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.banner-2 {
+    background: url(./images/banner-2.webp);
+    background-size: cover;
+    height: 970px;
+}
+.footer{
+    padding-top: 50px;
+}
+.footer-details {
+    display: grid;
+    margin: 40px 50px;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    justify-content: space-around;
+    align-items: stretch;
+    font-family: Nunito;
+    font-style: normal;
+    column-gap: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #424242;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 20px;
+}
+.footer-item li {
+    width: fit-content;
+    padding: 10px 5px;
+    list-style-position: inside;
+    cursor: pointer;
+}
+.footer-link {
+    color: #FF5672;
+}
+h1{
+    text-align: center;
+    background-color: grey;
+    padding: 30px;
+}
+img{
+    height: 150px;
+    width: 150px;
+}
+.container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    text-align: center;
+
+}

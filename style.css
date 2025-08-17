@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*doesn't allow padding and border to affect the height width*/
+    font-size: 24px;
+    font-family: sans-serif;
+}
+header{
+    background: url(./images/app-link-background.svg) no-repeat center/cover;
+    min-height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;/*topbottom leftright*/
+}
+nav .logo{
+    width: 20%;
+}
+nav img{
+    width: 100%;
+}
+.nav-links{
+    display: flex;
+    list-style: none;/*property to change bullets*/
+    gap: 2rem;
+
+}
+.nav-links a{
+    color: white;
+}
+a{
+    text-decoration: none;/*to remove underline for all links*/
+}
+/*mobile screen responsive code*/
+@media (max-width:576px){
+    *{
+        font-size: 16px;
+    }
+    header{
+        background: url(./images/media-app-link.webp) no-repeat center/cover;
+        height: 100vh;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav .logo{
+        width: 100px;
+        margin: auto;
+    }
+    .header-content h1{
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    .header-content{
+        height: 90vh;
+        gap: 2rem;
+    }
+    img[alt="ios-store"]{
+        height: 2.7rem;
+    }
+    .features .inner{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .display1{
+        background: url(./images/media-banner-1.webp) no-repeat center/cover;
+        height: 100vh;
+    }
+    .display2{
+        background: url(./images/media-banner-2.webp) no-repeat center/cover;
+        height: 100vh;
+    }
+    .connect .grid{
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        gap:3rem;
+
+    }
+    #email-btn-image{
+        right: 0px;
+        bottom: 0px;
+    }
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+    /*margin-top: 2rem;*/
+    height: 70vh;
+}
+.header-content h1{
+    font-size: 3.5rem;
+}
+.header-content a{
+    background-color: hotpink;
+    color: white;
+    padding: 10px 20px;
+    border-radius: .5rem;
+}
+img[alt="ios-store"]{
+    height: 2.4rem;
+}
+.playstore{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.features{
+    padding: 2rem;
+    height: 80vh;
+}
+.features h1, .connect h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.inner p{
+    margin: 1rem 0;
+}
+.features .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+   min-height: 60vh;
+}
+.features img{
+    width: 7rem;   
+}
+.display1{
+    background: url(./images/banner-1.webp) no-repeat center/cover;
+    min-height: 100vh;
+}
+.display1 h1{
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    padding: 15rem 0px;
+}
+.display2{
+    background: url(./images/banner-2.webp) no-repeat center/cover;
+    min-height: 100vh;
+}
+.display2 h1{
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 15rem 0px;
+}
+.display2 .menu-btn{
+    width: 250px;
+    border: 1.3px solid white;
+    padding: 7px;
+    font-weight: 600;
+    background: none;
+    font-size: 30px;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.display2 .btn{
+    padding: 0rem 22rem 4.5rem;
+}
+.connect{
+    padding: 3rem;
+}
+.connect h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.connect .grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 3rem;
+    line-height: 1.5rem;
+}
+.connect input{
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 2rem;
+    outline: none;
+    margin-top: 1rem;
+    width: 100%;
+}
+#email-btn-image{
+    height: 2.2rem;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.email-section{
+    position: relative;
+    width: 80%;
+    
+}
+.d-flex{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+footer{
+    background: linear-gradient(right,pink,hotpink);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
